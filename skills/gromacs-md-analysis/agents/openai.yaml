@@ -1,0 +1,4 @@
+interface:
+  display_name: "GROMACS MD Analysis"
+  short_description: "Analyze trajectories and create reproducible reports"
+  default_prompt: "Use $gromacs-md-analysis to analyze a protein MD trajectory and produce plots, statistics, and a report."

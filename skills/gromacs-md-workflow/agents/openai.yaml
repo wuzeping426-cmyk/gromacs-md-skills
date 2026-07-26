@@ -1,0 +1,3 @@
+display_name: GROMACS MD Workflow
+short_description: Run and audit GPU-accelerated protein-ligand MD in WSL
+default_prompt: Use $gromacs-md-workflow to set up, run, validate, analyze, and document a protein-ligand GROMACS MD simulation in WSL.

@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.venv/
+*.log
+*.xtc
+*.trr
+*.edr
+*.tpr
+*.gro
+*.cpt
+*.pdb
+*.top
+*.itp
+*.xvg
+*.dat

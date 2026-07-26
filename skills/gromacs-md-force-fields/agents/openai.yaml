@@ -1,0 +1,4 @@
+interface:
+  display_name: "GROMACS Force Field Guide"
+  short_description: "Choose compatible protein, ligand, water, and ion force fields"
+  default_prompt: "Use $gromacs-md-force-fields to select and audit compatible GROMACS force fields and ligand parameters."

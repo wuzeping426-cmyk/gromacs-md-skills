@@ -1,0 +1,4 @@
+interface:
+  display_name: "GROMACS Protein-Protein MD"
+  short_description: "Run and analyze protein-protein complex MD"
+  default_prompt: "Use $gromacs-md-protein-protein to prepare, simulate, validate, and analyze a protein-protein complex."

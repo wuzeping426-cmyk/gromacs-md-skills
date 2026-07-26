@@ -1,0 +1,4 @@
+interface:
+  display_name: "GROMACS Membrane MD"
+  short_description: "Set up and validate membrane protein simulations"
+  default_prompt: "Use $gromacs-md-membrane to build, run, validate, and analyze a membrane-protein GROMACS simulation."
