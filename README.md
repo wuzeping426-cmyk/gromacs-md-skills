@@ -10,7 +10,7 @@
 | `gromacs-md-membrane` | 膜蛋白、脂双层、膜结合体系，含半各向异性压强耦合和膜专属分析 |
 | `gromacs-md-protein-protein` | 蛋白-蛋白复合物、抗体-抗原、多聚体和界面稳定性 |
 | `gromacs-md-force-fields` | AMBER、CHARMM、OPLS、GROMOS、Martini、OpenFF 的选择和兼容性核对 |
-| `gromacs-md-analysis` | PBC 修正、RMSD/RMSF/Rg、接触、氢键、PCA/FEL、MM/PBSA 和 DOCX 报告 |
+| `gromacs-md-analysis` | PBC 修正、RMSD/RMSF/Rg、接触、氢键、PCA/FEL、Nature 风格图、MM/PBSA 和 DOCX 报告 |
 
 ## 安装到 Codex
 
@@ -39,6 +39,8 @@ Use $gromacs-md-analysis to analyze this trajectory and produce a Chinese report
 - 运行速度、结构稳定性、参数物理兼容性和自由能结论分开验证。
 - MM/PBSA 只有在实际运行并检查收敛后才能报告。
 - 不同体系比较时统一力场、时间窗口、采样间隔、拟合组和图形尺度。
+- 二聚体/多聚体或多配体体系必须对完整 Solute 进行 PBC 团簇化；禁止将镜像跳变当作配体脱离。
+- Nature 风格图输出 SVG/PDF/600 dpi TIFF/PNG；常规 MD 的 FEL 标注为投影群体景观，不报告为严格结合自由能。
 
 ## 校验
 
