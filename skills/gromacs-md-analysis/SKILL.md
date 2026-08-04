@@ -22,6 +22,13 @@ Start by inventorying the TPR, trajectory, index groups, topology, checkpoint/lo
 
 See `references/nature_report_workflow.md` for the reproducible figure and report contract.
 
+### Structural panels
+
+- Export representative structures only from the PBC-clean trajectory. Record the frame time, fitting procedure, selection, and why each frame represents the reported state.
+- Use `scripts/run_pymol_render.py` to run a reviewed PML script headlessly and check that its PNG was created. Run `--self-test` after configuring `PYMOL_EXE` before promising a batch render.
+- Read `references/pymol-md-figures.md` for reproducible protein-ligand, aligned-state, and MD snapshot PML recipes. Keep structural panels sparse and use them to support a metric-derived conclusion.
+- A single-frame geometric donor/acceptor selection is a visual aid, not a trajectory hydrogen-bond occupancy calculation. Use GROMACS or a validated analysis package for the quantitative result.
+
 ## Core metrics
 
 Generate and report:

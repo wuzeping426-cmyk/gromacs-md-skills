@@ -10,7 +10,7 @@
 | `gromacs-md-membrane` | 膜蛋白、脂双层、膜结合体系，含半各向异性压强耦合和膜专属分析 |
 | `gromacs-md-protein-protein` | 蛋白-蛋白复合物、抗体-抗原、多聚体和界面稳定性 |
 | `gromacs-md-force-fields` | AMBER、CHARMM、OPLS、GROMOS、Martini、OpenFF 的选择和兼容性核对 |
-| `gromacs-md-analysis` | PBC 修正、RMSD/RMSF/Rg、接触、氢键、PCA/FEL、Nature 风格图、MM/PBSA 和 DOCX 报告 |
+| `gromacs-md-analysis` | PBC 修正、RMSD/RMSF/Rg、接触、氢键、PCA/FEL、Nature 风格数据图和 PyMOL MD 快照图、MM/PBSA 和 DOCX 报告 |
 
 ## 安装到 Codex
 
@@ -41,6 +41,7 @@ Use $gromacs-md-analysis to analyze this trajectory and produce a Chinese report
 - 不同体系比较时统一力场、时间窗口、采样间隔、拟合组和图形尺度。
 - 二聚体/多聚体或多配体体系必须对完整 Solute 进行 PBC 团簇化；禁止将镜像跳变当作配体脱离。
 - Nature 风格图输出 SVG/PDF/600 dpi TIFF/PNG；常规 MD 的 FEL 标注为投影群体景观，不报告为严格结合自由能。
+- 结构图只使用 PBC 修正后的代表性快照；单帧几何筛选得到的是候选极性接触，不能替代轨迹氢键占有率分析。
 
 ## 校验
 

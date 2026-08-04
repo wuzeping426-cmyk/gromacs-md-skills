@@ -28,6 +28,8 @@ Use 2 fs with `constraints=h-bonds`, PME, Verlet buffering, and a reproducible c
 - Inspect PBC-corrected representative structures for chain separation, artificial periodic contacts, and water penetration.
 - Review temperature, density, box size, pressure trend, LINCS warnings, and checkpoint continuity.
 
+For a reproducible interface structure panel, use `scripts/render_interface_polar_contacts.py` on a PBC-clean representative PDB. It exports PNG, PML, and TSV evidence. Its single-snapshot donor/acceptor geometry is a candidate polar-contact display only; validate occupancy with trajectory analysis before calling any pair a persistent hydrogen bond. See `references/interface-analysis.md`.
+
 ## Interpretation
 
 High whole-complex RMSD can coexist with a stable interface if the complex rotates or undergoes domain motion. Report chain-wise RMSD and interface metrics together. Interface contact loss is not proof of dissociation unless it persists and agrees with separation/orientation measures.
